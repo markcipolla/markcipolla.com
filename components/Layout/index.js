@@ -7,7 +7,8 @@ import Footer from '../Footer'
 
 const Container = styled.div`
   max-width: 1000px;
-  margin: 0 auto
+  margin: 0 auto;
+  color: #21013D;
 `
 
 function Layout({ children }) {
