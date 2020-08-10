@@ -15,10 +15,15 @@ const Logo = styled('img')`
 const Example = styled('div')`
   border-radius: 4px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  margin: 60px auto 80px;
+  margin: 80px -20px;
   max-width: 700px;
   overflow: hidden;
-  width: 100%;
+  width: calc(100% + 40px);
+
+  @media screen and (min-width: 660px) {
+    margin: 80px auto;
+    width: 100%;
+  }
 
   div {
     height: auto !important;
