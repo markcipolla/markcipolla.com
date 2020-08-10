@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const FooterList = styled.ul`
   padding: 0;
-  margin: 0;
+  margin: 80px 0;
 `
 
 const FooterLink = styled.li`
