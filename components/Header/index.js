@@ -38,7 +38,7 @@ function Header() {
       <Link href="/">
         <a>
           <MugShot src="/me.png" />
-          <Saw src="/saw.svg" />
+          <Saw alt="Woodworking Saw by Marco Olgio from the Noun Project" src="/saw.svg" />
         </a>
       </Link>
     </Container>
