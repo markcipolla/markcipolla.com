@@ -67,7 +67,7 @@ function RemoteRetro() {
       </p>
 
       <p>
-        Up to you.
+        Up to you. Lots of ways to use it.
       </p>
 
       <Example>
