@@ -17,7 +17,7 @@ const MugShot = styled.img`
 
 const Saw = styled.img`
   width: 154px;
-  border: 2px solid white;
+  border: 3px solid #333;
   position: absolute;
   top: 20px;
   border-radius: 50%;
@@ -27,7 +27,7 @@ const Saw = styled.img`
   transition: opacity 0.3s;
 
   &:hover {
-    opacity: 0.85;
+    opacity: 0.9;
     z-index: 1;
   }
 `
