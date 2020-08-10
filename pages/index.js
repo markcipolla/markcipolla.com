@@ -29,7 +29,8 @@ function Home() {
         Outside of my day-to-day, I have a handy SaaS app
         called <Link href="/remoteretro.io"><a>RemoteRetro</a></Link> that helps (<em>mostly</em> software-development) teams
         run Agile retrospective meetings (especially when the team is remote), and I like to build wooden furniture using
-        fancy joinery techniques. I'm slowly replacing all my furniture with stuff I've made.
+        fancy joinery techniques. I'm <a href="https://www.instagram.com/dmaerk/">slowly replacing all my furniture with
+        stuff I've made.</a>
       </p>
     </>
   )
