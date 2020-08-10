@@ -15,7 +15,7 @@ const Logo = styled('img')`
 const Example = styled('div')`
   border-radius: 4px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
+  margin: 60px auto 80px;
   max-width: 700px;
   overflow: hidden;
   width: 100%;
@@ -46,7 +46,8 @@ function RemoteRetro() {
         team has has almost always had remote team members. After discussions with a
         colleague, <a href="https://twitter.com/keithpitty">Keith Pitty</a>, we noted that using a whiteboard,
         or other analog ways of running a retrospective, that made it difficult to fully join in the conversation.
-        We thought that we needed a tool to have online retro boards. Hence, <a href="https://www.remoteretro.io">RemoteRetro</a>.
+        We thought that we needed a tool to have online retro boards.
+        Hence, <a href="https://www.remoteretro.io">RemoteRetro</a>.
       </p>
 
       <a href="https://www.remoteretro.io">
@@ -54,10 +55,10 @@ function RemoteRetro() {
       </a>
 
       <p>
-        An online retro board, that everyonecan log into. And/or, throw it up on a tv/screen/projector,
-        and only the remote team members can
-        join in while local members are guided by a facilitator. Or, no remote team members, and use it to
-        keep a record of the sprint/iteration's retro items.
+        An online retro board, that everyone can log into. Throw it up on a tv/screen/projector,
+        and only the remote team members can join in while local members are guided by a facilitator.
+        Or, no remote team members, and use it to like a scribe to keep a record of the sprint/iteration's
+        retro items.
       </p>
 
       <p>
@@ -67,6 +68,22 @@ function RemoteRetro() {
       <Example>
         <ReactPlayer url="https://www.remoteretro.io/remoteretro-example.webm" playing loop controls />
       </Example>
+
+      <p>
+        It's got a bunch of common formats, plus you can customise them. It's got timers, so you can guide
+        your team to add their items, or to vote on ones important to the team.
+      </p>
+
+      <p>
+        <em>Soon</em>, it'll integrate into your regular workflow tools… Action items of a retro get created as
+        cards in your To-Be-Assigned queues.
+      </p>
+
+      <p>
+        Retrospectives, if done regularly, are a great opportunities to gently steer the ship as a team,
+        with only small adjustments. New ideas, and to help solve small problems and conflicts before they
+        become larger issues.
+      </p>
     </>
   )
 }
