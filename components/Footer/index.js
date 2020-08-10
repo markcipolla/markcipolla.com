@@ -24,20 +24,26 @@ function Footer() {
     <FooterList>
       <FooterLink>
         <a href="https://twitter.com/markcipolla/">
-          <Logo src='/github.svg' />
+          <Logo alt="Twitter Logo" src='/github.svg' />
           Twitter
         </a>
       </FooterLink>
       <FooterLink>
         <a href="https://www.linkedin.com/in/mark-cipolla/">
-          <Logo src='/linkedin.svg' />
+          <Logo alt="LinkedIn Logo" src='/linkedin.svg' />
           LinkedIn
         </a>
       </FooterLink>
       <FooterLink>
         <a href="https://github.com/markcipolla">
-          <Logo src='/twitter.svg' />
+          <Logo alt="Twitter Logo" src='/twitter.svg' />
           Github
+        </a>
+      </FooterLink>
+      <FooterLink>
+        <a href="https://www.instagram.com/dmaerk/">
+          <Logo alt="Instagram Logo" src='/instagram.svg' />
+          Instagram
         </a>
       </FooterLink>
     </FooterList>

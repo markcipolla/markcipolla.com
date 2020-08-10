@@ -55,8 +55,8 @@ function RemoteRetro() {
         Hence, <a href="https://www.remoteretro.io">RemoteRetro</a>.
       </p>
 
-      <a href="https://www.remoteretro.io">
-        <Logo src="/remoteretro-logo.svg"/>
+      <a text="RemoteRetro" href="https://www.remoteretro.io">
+        <Logo alt="Logo of RemoteRetro" src="/remoteretro-logo.svg"/>
       </a>
 
       <p>
@@ -71,7 +71,13 @@ function RemoteRetro() {
       </p>
 
       <Example>
-        <ReactPlayer url="https://www.remoteretro.io/remoteretro-example.webm" playing loop controls />
+        <ReactPlayer
+          alt="Example video showing a person running a retro, adding items, and moving them from one of four groups to another."
+          url="https://www.remoteretro.io/remoteretro-example.webm" playing
+          role="application"
+          loop
+          controls
+        />
       </Example>
 
       <p>
