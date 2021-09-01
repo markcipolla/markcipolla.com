@@ -21,9 +21,7 @@ function Home() {
 
       <p>
         I'm currently working with <a href="https://cogent.co/">Cogent</a>, and have worked previously
-        with <a href="https://www.fluxfederation.com/">Flux</a>, <a href="https://www.clover.com.au/">Clover</a>,
-        <a href="https://theconversation.com/">The Conversation</a> and <a href="https://www.realestate.com.au/">REA</a>,
-        amongst others.
+        with <a href="https://www.fluxfederation.com/">Flux</a>, <a href="https://www.clover.com.au/">Clover</a>, <a href="https://theconversation.com/">The Conversation</a> and <a href="https://www.realestate.com.au/">REA</a>, amongst others.
       </p>
 
       <p>
