@@ -24,7 +24,7 @@ function Footer() {
     <FooterList>
       <FooterLink>
         <a href="https://twitter.com/markcipolla/">
-          <Logo alt="Twitter Logo" src='/github.svg' />
+          <Logo alt="Twitter Logo" src='/twitter.svg' />
           Twitter
         </a>
       </FooterLink>
@@ -36,7 +36,7 @@ function Footer() {
       </FooterLink>
       <FooterLink>
         <a href="https://github.com/markcipolla">
-          <Logo alt="Twitter Logo" src='/twitter.svg' />
+          <Logo alt="Github Logo" src='/github.svg' />
           Github
         </a>
       </FooterLink>
