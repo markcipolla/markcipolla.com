@@ -20,8 +20,8 @@ function Home() {
       </p>
 
       <p>
-        I'm currently working with <a href="https://cogent.co/">Cogent</a>, and have worked previously
-        with <a href="https://www.fluxfederation.com/">Flux</a>, <a href="https://www.clover.com.au/">Clover</a>, <a href="https://theconversation.com/">The Conversation</a> and <a href="https://www.realestate.com.au/">REA</a>, amongst others.
+        I'm currently working with <a href="https://cash.app/">Cash App</a>, and have worked previously
+        with <a href="https://cogent.co/">Cogent</a>, the <a href="https://agsteward.com.au">National Stewardship Trading Platform</a>, <a href="https://www.fluxfederation.com/">Flux</a>, <a href="https://www.clover.com.au/">Clover</a>, <a href="https://theconversation.com/">The Conversation</a> and <a href="https://www.realestate.com.au/">realestate.com.au</a>, amongst others.
       </p>
 
       <p>
