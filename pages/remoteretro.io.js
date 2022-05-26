@@ -86,7 +86,7 @@ function RemoteRetro() {
       </p>
 
       <p>
-        <em>Soon</em>, it'll integrate into your regular workflow tools… Action items of a retro get created as
+        It also integrates into with Trello into your regular workflow by creating Action items of a retro as
         cards in your To-Be-Assigned queues.
       </p>
 
