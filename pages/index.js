@@ -15,8 +15,8 @@ function Home() {
 
       <p>
         I have deep knowledge in building web applications,
-        with over a decade in the industry across a number of business domains, and writing
-        Javascript / Typescript / React / Ruby to successfully deliver large scale projects.
+        with over fifteen years in the industry across a number of business domains, and writing
+        Javascript / Typescript / React / Ruby / .Net / Kotlin to successfully deliver large scale projects.
       </p>
 
       <p>
