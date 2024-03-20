@@ -23,12 +23,6 @@ function Footer() {
   return (
     <FooterList>
       <FooterLink>
-        <a href="https://twitter.com/markcipolla/">
-          <Logo alt="Twitter Logo" src='/twitter.svg' />
-          Twitter
-        </a>
-      </FooterLink>
-      <FooterLink>
         <a href="https://www.linkedin.com/in/mark-cipolla/">
           <Logo alt="LinkedIn Logo" src='/linkedin.svg' />
           LinkedIn
