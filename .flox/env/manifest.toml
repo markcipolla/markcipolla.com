@@ -35,8 +35,6 @@ script = """
 
   # Install nodejs depedencies
   yarn
-
-  
 """
 
 # An environment that works on one system is guaranteed to work on the
@@ -45,4 +43,4 @@ script = """
 # In order to use the environment on a system you must explicitly
 # add it to this list.
 [options]
-systems = ["x86_64-darwin"]
+systems = ["x86_64-darwin", "aarch64-darwin"]
