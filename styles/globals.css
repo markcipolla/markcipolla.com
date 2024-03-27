@@ -22,15 +22,33 @@ h1 {
   line-height: 0.75;
 }
 
-@media screen and (max-width: 280px) {
+.appreciation {
+  border-top: 1px solid lightcyan;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.appreciation h4 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 280px) {
   h1 {
-    font-size: 32px;
+    font-size: px;
+  }
+
+  p {
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   h1 {
     font-size: 120px;
+  }
+
+  p {
+    font-size: 26px;
   }
 }
 

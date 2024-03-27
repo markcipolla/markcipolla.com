@@ -10,7 +10,7 @@ function Home() {
       </p>
 
       <p>
-        By trade, I'm a full-stack software engineer with an art and design background.
+        I'm a full-stack product-thinking software engineer with an art and graphic design background.
       </p>
 
       <p>
