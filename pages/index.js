@@ -1,6 +1,57 @@
 import Link from 'next/link'
-
+import converter from 'number-to-words'
 function Home() {
+  const yearStarted = 2008;
+  const languages = ["Javascript", "Typescript", "React", "Ruby", ".Net", "Kotlin"]
+
+  const previousCompanies = [
+    {
+      name: "Cash App",
+      url: "https://cash.app/"
+    },
+    {
+      name: "Cogent",
+      url: "https://cogent.co/"
+    },
+    {
+      name: "Flux",
+      url: "https://www.fluxfederation.com/"
+    },
+    {
+      name: "Clover",
+      url: "https://www.clover.com.au/"
+    },
+    {
+      name: "The Conversation",
+      url: "https://theconversation.com/"
+    },
+    {
+      name: "SitePoint",
+      url: "https://www.sitepoint.com/"
+    },
+    {
+      name: "realestate.com.au",
+      url: "https://www.realestate.com.au/"
+    }
+  ]
+
+  const slugify = str =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+  const CommaSeparate = ({ companies, separator = ', ' }) => {
+    return companies.map((company, index) => [
+        index > 0 && separator,
+        index == companies.length - 1 && "and ",
+        <a key={`company-${slugify(company.name)}`} href={company.url}>{company.name}</a>
+      ]
+    )
+  }
+
   return (
     <>
       <h1>Hi. I'm Mark.</h1>
@@ -15,13 +66,13 @@ function Home() {
 
       <p>
         I have deep knowledge in building web applications,
-        with over fifteen years in the industry across a number of business domains, and writing
-        Javascript / Typescript / React / Ruby / .Net / Kotlin to successfully deliver large scale projects.
+        with over {converter.toWords(new Date().getFullYear() - yearStarted)} years in the industry across a number of business domains, and
+        writing {languages.join(" / ")} to successfully deliver large scale projects.
       </p>
 
       <p>
-        I'm currently working with <a href="https://carbonplus.earth">Carbon Plus</a> on the <a href="https://agsteward.com.au">National Stewardship Trading Platform</a>, and have worked previously
-        with <a href="https://cash.app/">Cash App</a>, <a href="https://cogent.co/">Cogent</a>, <a href="https://www.fluxfederation.com/">Flux</a>, <a href="https://www.clover.com.au/">Clover</a>, <a href="https://theconversation.com/">The Conversation</a> and <a href="https://www.realestate.com.au/">realestate.com.au</a>, amongst others.
+        I'm currently working with <a href="https://carbonplus.earth">Carbon Plus</a> on the <a href="https://agsteward.com.au">National Stewardship Trading Platform</a>, and 
+        have worked previously with <CommaSeparate companies={previousCompanies} />.
       </p>
 
       <p>
