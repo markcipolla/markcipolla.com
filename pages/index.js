@@ -28,12 +28,23 @@ function Home() {
         Outside of my day-to-day:
         <ul>
           <li>
-            I have a handy SaaS app called <Link href="/remoteretro.io">RemoteRetro</Link> that 
-            helps (<em>mostly</em> software development) teams run Agile retrospective meetings (especially 
-            when team members are working remote).
+            <Link href="/remoteretro.io"><a>RemoteRetro</a></Link> is a SAAS that 
+            helps (mainly software development) teams run better agile retrospective meetings, especially 
+            when team members are working remote.
           </li>
           <li>
+            <Link href="/grizzlyguts.com.au"><a>Grizzly Guts</a></Link>, a platform for coeliacs / gluten intolerant / dairy 
+            intolerant  / vegans to find and recommend places to eat and shop.
+          </li>
+          {/* <li>
+            <Link href="/suburbapi.com.au"><a>SuburbAPI</a></Link>, an API for fetching (surprise surprise) Australian suburb data, specifically
+            GeoJSON and surrounding suburbs data used for mapping and geospatial web applications.
+          </li> */}
+          <li>
             I like to build wooden furniture using fancy joinery techniques; I'm <a href="https://www.instagram.com/dmaerk/">slowly replacing all my furniture with stuff I've made.</a>
+          </li>
+          <li>
+            I'm a purple belt in Brazilian Jiu Jitsu.
           </li>
         </ul>
       </p>
