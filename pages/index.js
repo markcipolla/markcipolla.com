@@ -20,7 +20,7 @@ function Home() {
       </p>
 
       <p>
-        I'm currently working with <a href="https://carbonplus.earth">Carbon Plus</a> on the <a href="https://planr.gob.au">Platform for Land and Nature Repair</a>, and 
+        I'm currently working with <a href="https://carbonplus.earth">Carbon Plus</a> on the <a href="https://planr.gov.au">Platform for Land and Nature Repair</a>, and 
         have worked previously with <CommaSeparate companies={previousCompanies} />.
       </p>
 
