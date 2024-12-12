@@ -7,7 +7,7 @@ export const InternalLink = ({
   href: string;
   children: React.ReactNode;
 }) => (
-  <Link href={href} className="text-orange-400 hover:text-orange-800 hover:underline">
+  <Link href={href} className="text-orange-500 hover:text-orange-800 hover:underline">
     {children}
   </Link>
 );
