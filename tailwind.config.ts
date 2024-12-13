@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Aesthetic", "sans-serif"],
-        body: ["Archia", "sans-serif"],
+        heading: ["var(--font-aesthetic)", "sans-serif"],
+        body: ["var(--font-archia)", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
