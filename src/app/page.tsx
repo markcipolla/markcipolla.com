@@ -1,3 +1,4 @@
+import converter from "number-to-words";
 import {
   Section,
   Block,
@@ -7,7 +8,70 @@ import {
 } from "@/components";
 import React from "react";
 
+interface Company {
+  name: string;
+  url: string;
+}
+
+const previousCompanies: Company[] = [
+  {
+    name: "Cash App",
+    url: "https://cash.app/",
+  },
+  {
+    name: "Cogent",
+    url: "https://cogent.co/",
+  },
+  {
+    name: "Flux",
+    url: "https://www.fluxfederation.com/",
+  },
+  {
+    name: "Clover",
+    url: "https://www.clover.com.au/",
+  },
+  {
+    name: "The Conversation",
+    url: "https://theconversation.com/",
+  },
+  {
+    name: "SitePoint",
+    url: "https://www.sitepoint.com/",
+  },
+  {
+    name: "realestate.com.au",
+    url: "https://www.realestate.com.au/",
+  },
+];
+
+const slugify = (str: string) =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const CommaSeparate = ({
+  companies,
+  separator = ", ",
+}: {
+  companies: Company[];
+  separator?: string;
+}) => {
+  return companies.map((company, index) => [
+    index > 0 && separator,
+    index == companies.length - 1 && "and ",
+    <ExternalLink key={`company-${slugify(company.name)}`} href={company.url}>
+      {company.name}
+    </ExternalLink>,
+  ]);
+};
+
+const yearStarted = 2008;
+
 export default function Home() {
+  const yearsExperience = converter.toWords(new Date().getFullYear() - yearStarted)
   return (
     <>
       <Section>
@@ -18,10 +82,10 @@ export default function Home() {
             art and graphic design background.
           </p>
           <p>
-            I have extensive knowledge and experience in building web applications, with over
-            sixteen years in the industry across a number of business domains,
-            and successfully delivering large scale projects to millions of
-            users.
+            I have extensive knowledge and experience in building web
+            applications, with over {yearsExperience} years in
+            the industry across a number of business domains, and successfully
+            delivering large scale projects to millions of users.
           </p>
         </Block>
       </Section>
@@ -50,28 +114,7 @@ export default function Home() {
           </p>
           <p>
             I have worked previously with{" "}
-            <ExternalLink href="https://cash.app/">Cash App</ExternalLink>,{" "}
-            <ExternalLink href="https://cogent.co/">Cogent</ExternalLink>,{" "}
-            <ExternalLink href="https://www.fluxfederation.com/">
-              Flux
-            </ExternalLink>
-            ,{" "}
-            <ExternalLink href="https://www.clover.com.au/">
-              Clover
-            </ExternalLink>
-            ,{" "}
-            <ExternalLink href="https://theconversation.com/">
-              The Conversation
-            </ExternalLink>
-            ,{" "}
-            <ExternalLink href="https://www.sitepoint.com/">
-              SitePoint
-            </ExternalLink>
-            , and{" "}
-            <ExternalLink href="https://www.realestate.com.au/">
-              realestate.com.au
-            </ExternalLink>
-            .
+            <CommaSeparate companies={previousCompanies} />.
           </p>
         </Block>
       </Section>
@@ -84,9 +127,19 @@ export default function Home() {
               category="Frontend"
               technologies="Deep knowledge of HTML/CSS, React, Typescript / Javascript, Tailwind, Material Design, Formik & Yup, Svelte, jQuery"
             />
-            <Technology category="Backend" technologies="Ruby, Node, Prisma, .Net, Kotlin" />
-            <Technology category="Design" technologies="Figma, Sketch, Adobe Illustrator & Photoshop" />
+            <Technology
+              category="Backend"
+              technologies="Ruby, Node, Prisma, .Net, Kotlin"
+            />
+            <Technology
+              category="Design"
+              technologies="Figma, Sketch, Adobe Illustrator & Photoshop"
+            />
             <Technology category="Databases" technologies="PostgreSQL, mySQL" />
+            <Technology
+              category="Mapping"
+              technologies="Leaflet, Google Maps"
+            />
             <Technology
               category="Testing"
               technologies="RSpec, Playwright, Cypress"
@@ -94,10 +147,6 @@ export default function Home() {
             <Technology
               category="DevOps"
               technologies="Github CI, Buildkite, Jenkins, CircleCI"
-            />
-            <Technology
-              category="Mapping"
-              technologies="Leaflet, Google Maps"
             />
             <Technology
               category="Containers"
