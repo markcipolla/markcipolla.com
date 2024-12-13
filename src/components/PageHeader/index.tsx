@@ -6,7 +6,7 @@ import saw from "./saw.svg";
 import { Block } from "../";
 
 export const PageHeader = () => (
-  <Block columns={2}>
+  <Block columns={2} className="col-span-5">
     <Link href="/" className="flex flex-row gap-4">
       <div className="relative w-28 rounded-full overflow-hidden border-2 border-black hover:border-green-800 shadow-xl">
         <Image src={me} alt="Mark Cipolla" className="w-28"/>
