@@ -47,14 +47,14 @@ export default function RemoteRetro() {
           <p>
             Everyone logs in, both remote and in-person team members. Or, throw it up on a tv/screen/projector, and have only remote team members join in
             while local members are guided by a facilitator. Or, no remote team members, and use it to like a scribe to keep a record of the
-            sprint/iteration's retro items. 
+            sprint/iteration&apos;s retro items. 
           </p> 
           <p>
             Up to you. Lots of ways to use it.
           </p>
 
           <p>
-            It's got a bunch of common formats, plus you can customise them. It's got timers, so you can guide your team to add their items, or to vote on ones important to the team.
+            It&apos;s got a bunch of common formats, plus you can customise them. It&apos;s got timers, so you can guide your team to add their items, or to vote on ones important to the team.
           </p>
         </Block>
       </Section>
