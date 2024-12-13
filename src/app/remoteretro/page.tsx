@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { Section, Block, Header, ExternalLink } from "@/components";
+import logo from "./logo.svg"
 export default function RemoteRetro() {
   return (
     <>
@@ -12,7 +14,10 @@ export default function RemoteRetro() {
       </Section>
       <Section>
         <Header label="RemoteRetro">
-          <ExternalLink href="https://remoteretro.io">remoteretro.io</ExternalLink>
+          <div className="flex flex-col gap-8 items-end">
+            <ExternalLink href="https://remoteretro.io">remoteretro.io</ExternalLink>
+            <Image src={logo} alt="RemoteRetro logo"/>
+            </div>
         </Header>
         <Block columns={3}>
           <p>
