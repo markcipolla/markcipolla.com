@@ -38,7 +38,7 @@ export default function RemoteRetro() {
             An online retro board, that everyone can log into.
           </p>
         
-          <video preload="auto" autoPlay controls loop className="shadow-xl border-[5px] border-white rounded">
+          <video preload="auto" autoPlay controls loop className="shadow-xl border-[5px] border-black rounded">
             <source src="https://remoteretro.io/remoteretro-example.webm" type="video/webm" />
             <source src="https://remoteretro.io/remoteretro-example.mp4" type="video/mp4" />
           </video>
