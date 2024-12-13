@@ -8,9 +8,9 @@
 # the 'install' section
 
 [install]
-yarn.pkg-path = "yarn"
-yarn.version = "1.22.19"
-nodejs_20.pkg-path = "nodejs_20"
+nodejs_latest.pkg-path = "nodejs_latest"
+# hello.pkg-path = "hello"
+# nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 
 # Set an environment variable.
 # These variables may not reference once another
@@ -28,14 +28,9 @@ nodejs_20.pkg-path = "nodejs_20"
 # only the hook defined in 'file' will be run .
 
 [hook]
-script = """
-  # https://www.reddit.com/r/node/comments/10jl1u3/npm_start_error_code_err_ossl_evp_unsupported/
-  # https://github.com/latentcat/qrbtf/issues/60#issuecomment-1793842248
-  export NODE_OPTIONS=--openssl-legacy-provider
-
-  # Install nodejs depedencies
-  yarn
-"""
+# script = """
+#   echo "it's gettin flox in here";
+# """
 
 # An environment that works on one system is guaranteed to work on the
 # same type of system,
@@ -43,4 +38,4 @@ script = """
 # In order to use the environment on a system you must explicitly
 # add it to this list.
 [options]
-systems = ["x86_64-darwin", "aarch64-darwin"]
+systems = ["aarch64-darwin"]
