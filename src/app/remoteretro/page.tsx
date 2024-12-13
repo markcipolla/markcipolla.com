@@ -1,5 +1,4 @@
 import { Section, Block, Header, ExternalLink } from "@/components";
-
 export default function RemoteRetro() {
   return (
     <>
