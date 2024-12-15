@@ -24,7 +24,7 @@ export default function RemoteRetro() {
             When I was working at <ExternalLink href="https://theconversation.com">The Conversation</ExternalLink>, the team has has almost always had remote team members.
           </p>
           <p>
-            While attending <ExternalLink href="https://rubyconf.org.au/2016/">RubyConf 2016</ExternalLink> my colleague <ExternalLink href="https://keithpitty.com">Keith Pitty</ExternalLink> and I
+            While attending <ExternalLink href="https://rubyconf.org.au/2016/">RubyConf 2016</ExternalLink>, my colleague <ExternalLink href="https://keithpitty.com">Keith Pitty</ExternalLink> and I
             noted that using a whiteboard, or other analog ways of running a retrospective, that made it difficult to fully join in the conversation. We thought that we needed a tool to have online
             retro boards.
           </p>
