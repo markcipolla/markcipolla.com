@@ -116,6 +116,8 @@ export default function Home() {
             I have worked previously with{" "}
             <CommaSeparate companies={previousCompanies} />.
           </p>
+
+          <p>Read my full <InternalLink href="/cv">curriculum vitæ</InternalLink>.</p>
         </Block>
       </Section>
 
