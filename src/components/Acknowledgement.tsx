@@ -3,7 +3,7 @@ import { Block, Section } from "@/components";
 export const Acknowledgement = () => (
   <Section>
 
-    <Block columns={3} className="col-start-3">
+    <Block columns={3} className="col-start-3 text-sm">
       <p>
         Mark lives and works on unceded Wurundjeri land in Naarm / Melbourne,
         Australia, and acknowledges the traditional custodians of the land on which he lives,
