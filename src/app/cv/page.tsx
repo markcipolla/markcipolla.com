@@ -184,7 +184,7 @@ const calculateDuration = (start: string, end: string | null): string => {
 
 const Role = ({ role }: { role: Role }) => {
   return (
-    <div className="p-4 md:p-12 flex gap-8 flex-col">
+    <div className="px-4 py-12 md:p-12 flex gap-8 flex-col">
       <div>
         <h2>
           <ExternalLink href={role.url}>{role.company}</ExternalLink>
