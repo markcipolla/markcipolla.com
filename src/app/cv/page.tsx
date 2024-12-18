@@ -23,7 +23,9 @@ const roles: Role[] = [
 Carbon Plus is a team focused on growing environmental markets, &ldquo;to leave behind a planet more capable of sustaining healthy human life.&rdquo;
 
 Leading the development of the [Platform for Land and Nature Repair](https://planr.gov.au) for the [Department of Climate Change, Energy, the Environment and Water](https://www.dcceew.gov.au/), in
-collaboration with [Australian National University](https://www.anu.edu.au). PLANR helps landowners and farmers:
+collaboration with [Australian National University](https://www.anu.edu.au). 
+
+PLANR helps landowners and farmers:
 - understand how parts of their land can be used for carbon abatement and biodiversity projects and the prospective outcomes
 - apply for programs and certification
 - list their approved offerings in various environmental units, including [ACCUs](https://cer.gov.au/schemes/australian-carbon-credit-unit-scheme/australian-carbon-credit-units), on the marketplace platform

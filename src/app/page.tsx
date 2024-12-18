@@ -140,7 +140,7 @@ export default function Home() {
             <Technology category="Databases" technologies="PostgreSQL, mySQL" />
             <Technology
               category="Mapping"
-              technologies="Leaflet, Google Maps"
+              technologies="Leaflet, Geoman, Google Maps"
             />
             <Technology
               category="Testing"
