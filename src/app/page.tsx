@@ -168,6 +168,11 @@ export default function Home() {
             development) teams run better Agile retrospective meetings
             (especially when team members are working remote).
           </p>
+          <p>
+            <InternalLink href="/grizzlyguts">Grizzly Guts</InternalLink> is an
+            early-stage project to help people with dietary restrictions find
+            restaurants, cafes and shops that cater to their needs.
+          </p>
         </Block>
       </Section>
     </>
