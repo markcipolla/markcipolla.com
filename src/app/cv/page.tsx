@@ -187,13 +187,10 @@ const calculateDuration = (start: string, end: string | null): string => {
 
   const yearString = years === 1 ? `${years} year` : `${years} years`;
   const monthString = months === 1 ? `${months} month` : `${months} months`;
-  if(years === 0){
-    return monthString;
-  } else if(months === 0){
-    return yearString;
-  } else {
-    return `${yearString}, ${monthString}`;
-  }
+
+  if (years === 0) return monthString;
+  if (months === 0) return yearString;
+  return `${yearString}, ${monthString}`;
 };
 
 const Role = ({ role }: { role: Role }) => {
