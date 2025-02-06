@@ -176,12 +176,24 @@ export default function CurriculumVitæ() {
 const calculateDuration = (start: string, end: string | null): string => {
   const startDate = new Date(start);
   const endDate = end ? new Date(end) : new Date();
-  const diff = new Date(endDate.getTime() - startDate.getTime());
-  const years = diff.getUTCFullYear() - 1970;
-  const months = diff.getUTCMonth();
+  
+  let years = endDate.getFullYear() - startDate.getFullYear();
+  let months = endDate.getMonth() - startDate.getMonth();
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
 
   const yearString = years === 1 ? `${years} year` : `${years} years`;
-  return years > 0 ? `${yearString}, ${months} months` : `${months} months`;
+  const monthString = months === 1 ? `${months} month` : `${months} months`;
+  if(years === 0){
+    return monthString;
+  } else if(months === 0){
+    return yearString;
+  } else {
+    return `${yearString}, ${monthString}`;
+  }
 };
 
 const Role = ({ role }: { role: Role }) => {
