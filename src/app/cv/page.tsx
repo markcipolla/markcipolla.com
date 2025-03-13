@@ -13,14 +13,25 @@ interface Role {
 
 const roles: Role[] = [
   {
+    company: "Fresho",
+    url: "https://fresho.com",
+    role: "Staff Software Engineer",
+    started: "March 2025",
+    ended: null,
+    capabilities: ["Ruby on Rails", "React"],
+    description: `
+Fresho is a market-leading wholesale food order management platform, designed as a Closed Marketplace for fresh food suppliers and their customers.
+`,
+  },
+  {
     company: "Carbon Plus",
     url: "https://carbonplus.earth",
     role: "Lead Engineer",
     started: "Feb 2024",
-    ended: null,
+    ended: "Feb 2025",
     capabilities: ["Next.js", "React", "Node.js", "Redux", "Tailwind", "TypeScript", "Mapping", "Azure", "Cypress", ".NET", "Geoman"],
     description: `
-Carbon Plus is a team focused on growing environmental markets, &ldquo;to leave behind a planet more capable of sustaining healthy human life.&rdquo;
+Carbon Plus was a team focused on growing environmental markets, &ldquo;to leave behind a planet more capable of sustaining healthy human life.&rdquo;
 
 Leading the development of the [Platform for Land and Nature Repair](https://planr.gov.au) for the [Department of Climate Change, Energy, the Environment and Water](https://www.dcceew.gov.au/), in
 collaboration with [Australian National University](https://www.anu.edu.au). 

@@ -77,13 +77,14 @@ export default function Home() {
         <Header label="Work" />
         <Block columns={3}>
           <p>
-            I&lsquo;m currently working with <ExternalLink href="https://carbonplus.earth">Carbon Plus</ExternalLink> on the{" "}
+            I&lsquo;m currently working with <ExternalLink href="https://fresho.com">Fresho</ExternalLink>.
+          </p>
+          <p>I have worked previously with{" "}
+            <ExternalLink href="https://carbonplus.earth">Carbon Plus</ExternalLink> on the{" "}
             <ExternalLink href="https://planr.gov.au">Platform for Land and Nature Repair</ExternalLink> for the{" "}
             <ExternalLink href="https://www.dcceew.gov.au/">Department of Climate Change, Energy, the Environment and Water</ExternalLink> and{" "}
-            <ExternalLink href="https://www.anu.edu.au/">Australian National University</ExternalLink>.
-          </p>
-          <p>
-            I have worked previously with <CommaSeparate companies={previousCompanies} />.
+            <ExternalLink href="https://www.anu.edu.au/">Australian National University</ExternalLink>, and before that{" "}
+            <CommaSeparate companies={previousCompanies} />.
           </p>
 
           <p>
