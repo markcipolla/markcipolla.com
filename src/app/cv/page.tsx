@@ -18,9 +18,13 @@ const roles: Role[] = [
     role: "Staff Software Engineer",
     started: "March 2025",
     ended: null,
-    capabilities: ["Ruby on Rails", "React"],
+    capabilities: ["Ruby on Rails", "React", "Bootstrap", "TypeScript"],
     description: `
 Fresho is a market-leading wholesale food order management platform, designed as a Closed Marketplace for fresh food suppliers and their customers.
+
+Introduced TypeScript to the codebases, refactoring a shared set of React components, and added a gem of [View Components](https://viewcomponents.org/) to share Rails components, all being displayed in [Storybook](https://storybook.js.org/) together.
+
+Built an infrastructure documentation app that reads a Github Organisation's repositories and builds a [React Flow](https://reactflow.dev/) diagram of the dependencies, events and APIs between them.
 `,
   },
   {
