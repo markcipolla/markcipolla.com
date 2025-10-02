@@ -18,7 +18,7 @@ const roles: Role[] = [
     role: "Staff Software Engineer",
     started: "March 2025",
     ended: null,
-    capabilities: ["Ruby on Rails", "React", "Bootstrap", "TypeScript"],
+    capabilities: ["Ruby on Rails", "React", "Bootstrap", "TypeScript", "AWS", "Heroku"],
     description: `
 Fresho is a market-leading wholesale food order management platform, designed as a Closed Marketplace for fresh food suppliers and their customers.
 
