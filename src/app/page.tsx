@@ -77,7 +77,7 @@ export default function Home() {
         <Header label="Work" />
         <Block columns={3}>
           <p>
-            I&lsquo;m currently working with <ExternalLink href="https://fresho.com">Fresho</ExternalLink>.
+            I&lsquo;m currently working as a staff engineer with <ExternalLink href="https://fresho.com">Fresho</ExternalLink>.
           </p>
           <p>I have worked previously with{" "}
             <ExternalLink href="https://carbonplus.earth">Carbon Plus</ExternalLink> on the{" "}
@@ -97,7 +97,7 @@ export default function Home() {
         <Header label="Technical capabilities" />
         <Block columns={3}>
           <dl className="grid grid-cols-3">
-            <Technology category="Frontend" technologies="Deep knowledge of HTML/CSS, React, Typescript / Javascript, Tailwind, Material Design, Formik & Yup, Svelte, jQuery" />
+            <Technology category="Frontend" technologies="Deep knowledge of HTML/CSS, React, Typescript / Javascript, Tailwind, Bootstrap, Material Design, Formik & Yup, Svelte, jQuery" />
             <Technology category="Backend" technologies="Ruby, Node, Prisma, .Net, Kotlin" />
             <Technology category="Design" technologies="Figma, Sketch, Adobe Illustrator & Photoshop" />
             <Technology category="Databases" technologies="PostgreSQL, mySQL" />
