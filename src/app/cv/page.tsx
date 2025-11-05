@@ -1,3 +1,4 @@
+import React from "react";
 import { Section, Block, Header, ExternalLink, Tags } from "@/components";
 import ReactMarkdown from "react-markdown";
 
@@ -106,7 +107,7 @@ A short contract building new features, implenting the roadmap, and improving th
 `,
   },
   {
-    company: "The Conversation Media Group",
+    company: "The Conversation",
     url: "https://theconversation.com",
     role: "Senior Developer",
     started: "Nov 2012",
@@ -177,12 +178,26 @@ export default function CurriculumVitæ() {
   return (
     <>
       <Section>
-        <Header label="Curriculum vitae" />
-        <Block columns={3} noPadding noGap className="divide-y divide-green-200">
-          {roles.map((role, index) => (
-            <Role key={index} role={role} />
-          ))}
-        </Block>
+        {roles.map((role, index) => (
+          <React.Fragment key={index}>
+            <Header label={role.company}>
+              <div>
+                <h2 className='mb-3'>
+                  <ExternalLink href={role.url}>{role.url}</ExternalLink>
+                </h2>
+
+                <p>{role.role}</p>
+
+                <p className="text-sm">
+                  {role.started} — {role.ended || "Present"} ({calculateDuration(role.started, role.ended)})
+                </p>
+              </div>
+            </Header>
+            <Block columns={3} noPadding noGap className="divide-y divide-green-200">
+              <Role role={role} />
+            </Block>
+          </React.Fragment>
+        ))}
       </Section>
     </>
   );
@@ -210,18 +225,7 @@ const calculateDuration = (start: string, end: string | null): string => {
 
 const Role = ({ role }: { role: Role }) => {
   return (
-    <div className="px-4 py-12 md:p-12 flex gap-8 flex-col">
-      <div>
-        <h2>
-          <ExternalLink href={role.url}>{role.company}</ExternalLink>
-        </h2>
-
-        <p>{role.role}</p>
-
-        <p className="text-sm">
-          {role.started} — {role.ended || "Present"} ({calculateDuration(role.started, role.ended)})
-        </p>
-      </div>
+    <div className="px-4 py-8 md:px-12 flex gap-8 flex-col">
       <ReactMarkdown
         className="mt-4 flex flex-col gap-4"
         components={{
