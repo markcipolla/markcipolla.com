@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 interface Role {
   company: string;
-  url: string;
+  url: string | null;
   role: string;
   started: string;
   ended: string | null;
@@ -30,7 +30,7 @@ Built an infrastructure documentation app that reads a Github Organisation's rep
   },
   {
     company: "Carbon Plus",
-    url: "https://carbonplus.earth",
+    url: null,
     role: "Lead Engineer",
     started: "Feb 2024",
     ended: "Feb 2025",
@@ -182,9 +182,11 @@ export default function CurriculumVitæ() {
           <React.Fragment key={index}>
             <Header label={role.company}>
               <div>
-                <h2 className='mb-3'>
-                  <ExternalLink href={role.url}>{role.url}</ExternalLink>
-                </h2>
+                {role.url && (
+                  <h2 className="mb-3">
+                    <ExternalLink href={role.url}>{role.url}</ExternalLink>
+                  </h2>
+                )}
 
                 <p>{role.role}</p>
 
