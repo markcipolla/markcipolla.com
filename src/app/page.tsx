@@ -74,21 +74,19 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Header label="Work" />
+        <Header label="Projects" />
+
         <Block columns={3}>
           <p>
-            I&lsquo;m currently working as a staff engineer with <ExternalLink href="https://fresho.com">Fresho</ExternalLink>.
+            <InternalLink href="/homebutler">HomeButler</InternalLink> is an effort to find use for my {converter.toWords(new Date().getFullYear() - 2012)} year old 1st gen iPad mini by building a teeny, scrappy app for an incredibly old iOS version to have an interface to control my home automation. 
           </p>
-          <p>I have worked previously with{" "}
-            Carbon Plus on the{" "}
-            <ExternalLink href="https://planr.gov.au">Platform for Land and Nature Repair</ExternalLink> for the{" "}
-            <ExternalLink href="https://www.dcceew.gov.au/">Department of Climate Change, Energy, the Environment and Water</ExternalLink> and{" "}
-            <ExternalLink href="https://www.anu.edu.au/">Australian National University</ExternalLink>, and before that{" "}
-            <CommaSeparate companies={previousCompanies} />.
-          </p>
-
           <p>
-            Read my full <InternalLink href="/cv">curriculum vitæ</InternalLink>.
+            <InternalLink href="/remoteretro">RemoteRetro</InternalLink> is a small, profitable SaaS product that helps (mostly software development) teams run better Agile retrospective meetings
+            (especially when team members are working remote).
+          </p>
+          <p>
+            <InternalLink href="/grizzlyguts">Grizzly Guts</InternalLink> is an early-stage project to help people with dietary restrictions find restaurants, cafes and shops that cater to their
+            needs.
           </p>
         </Block>
       </Section>
@@ -110,16 +108,21 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Header label="Projects" />
-
+        <Header label="Work" />
         <Block columns={3}>
           <p>
-            <InternalLink href="/remoteretro">RemoteRetro</InternalLink> is a small, profitable SaaS product that helps (mostly software development) teams run better Agile retrospective meetings
-            (especially when team members are working remote).
+            I&lsquo;m currently working as a staff engineer with <ExternalLink href="https://fresho.com">Fresho</ExternalLink>.
           </p>
+          <p>I have worked previously with{" "}
+            Carbon Plus on the{" "}
+            <ExternalLink href="https://planr.gov.au">Platform for Land and Nature Repair</ExternalLink> for the{" "}
+            <ExternalLink href="https://www.dcceew.gov.au/">Department of Climate Change, Energy, the Environment and Water</ExternalLink> and{" "}
+            <ExternalLink href="https://www.anu.edu.au/">Australian National University</ExternalLink>, and before that{" "}
+            <CommaSeparate companies={previousCompanies} />.
+          </p>
+
           <p>
-            <InternalLink href="/grizzlyguts">Grizzly Guts</InternalLink> is an early-stage project to help people with dietary restrictions find restaurants, cafes and shops that cater to their
-            needs.
+            Read my full <InternalLink href="/cv">curriculum vitæ</InternalLink>.
           </p>
         </Block>
       </Section>
