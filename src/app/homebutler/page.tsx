@@ -15,6 +15,7 @@ export default function HomeButler() {
           <div className="flex flex-col gap-8 items-end">
             <Tags tags={["iOS", "UIKit", "Theos", "Xcode","Home Assistant", "Claude.ai" ]} />
           </div>
+          <ExternalLink href="https://github.com/markcipolla/homebutler">GitHub</ExternalLink>
         </Header>
         <Block columns={3}>
           <video src="/homebutler/demo.mp4" preload="auto" autoPlay controls loop className="shadow-xl border-[5px] border-black rounded">
