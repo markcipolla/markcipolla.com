@@ -38,6 +38,17 @@ const previousCompanies: Company[] = [
   },
 ];
 
+export const technicalCapabilities = {
+  "Frontend": "Deep knowledge of HTML/CSS, React, Typescript / Javascript, Tailwind, Bootstrap, Material Design, Formik & Yup, Svelte, jQuery",
+  "Backend": "Ruby, Node, Prisma, .Net, Kotlin",
+  "Design": "Figma, Sketch, Adobe Illustrator & Photoshop",
+  "Databases": "PostgreSQL, mySQL",
+  "Mapping": "Leaflet, Geoman, Google Maps",
+  "Testing": "RSpec, Playwright, Cypress",
+  "DevOps": "Github CI, Buildkite, Jenkins, CircleCI",
+  "Containers": "Docker, Docker Composer",
+}
+
 const slugify = (str: string) =>
   str
     .toLowerCase()
@@ -95,14 +106,9 @@ export default function Home() {
         <Header label="Technical capabilities" />
         <Block columns={3}>
           <dl className="grid grid-cols-3">
-            <Technology category="Frontend" technologies="Deep knowledge of HTML/CSS, React, Typescript / Javascript, Tailwind, Bootstrap, Material Design, Formik & Yup, Svelte, jQuery" />
-            <Technology category="Backend" technologies="Ruby, Node, Prisma, .Net, Kotlin" />
-            <Technology category="Design" technologies="Figma, Sketch, Adobe Illustrator & Photoshop" />
-            <Technology category="Databases" technologies="PostgreSQL, mySQL" />
-            <Technology category="Mapping" technologies="Leaflet, Geoman, Google Maps" />
-            <Technology category="Testing" technologies="RSpec, Playwright, Cypress" />
-            <Technology category="DevOps" technologies="Github CI, Buildkite, Jenkins, CircleCI" />
-            <Technology category="Containers" technologies="Docker, Docker Composer" />
+            {Object.entries(technicalCapabilities).map(([category, technologies]) => (
+              <Technology key={category} category={category} technologies={technologies} />
+            ))}
           </dl>
         </Block>
       </Section>

@@ -15,7 +15,6 @@ const archia = localFont({
   variable: '--font-archia',
 })
 
-
 export const metadata: Metadata = {
   title: "Mark Cipolla",
   description: "Full-stack software, half Space Wizard",
