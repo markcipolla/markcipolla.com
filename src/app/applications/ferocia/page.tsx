@@ -1,7 +1,12 @@
 'use client';
 
-import { PDFViewer } from '@react-pdf/renderer';
+import dynamic from 'next/dynamic';
 import { CVContent } from '@/components/PDF/CVContent';
+
+const PDFViewer = dynamic(
+  () => import('@react-pdf/renderer').then((mod) => mod.PDFViewer),
+  { ssr: false }
+);
 
 const coverLetter = `
 Dear Ferocia Team,
