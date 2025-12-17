@@ -1,3 +1,4 @@
+import converter from "number-to-words";
 import { Section, Block, Header, ExternalLink, Tags } from "@/components";
 import Link from "next/link";
 export default function HomeButler() {
@@ -6,7 +7,7 @@ export default function HomeButler() {
       <Section>
         <Block columns={3}>
           <p>
-            I love the idea if <ExternalLink href="https://pontus.granstrom.me/scrappy/">scrappy</ExternalLink> apps; the handmade ones just for fun, for you or your family and friends. Especially those that find use for hardware that otherwise sits in a electronics box, gathering dust
+            I love the idea of <ExternalLink href="https://pontus.granstrom.me/scrappy/">scrappy</ExternalLink> apps; the handmade ones just for fun, for you or your family and friends. Especially those that find use for hardware that otherwise sits in a electronics box, gathering dust.
           </p>
         </Block>
       </Section>
@@ -18,9 +19,13 @@ export default function HomeButler() {
           <ExternalLink href="https://github.com/markcipolla/homebutler">GitHub</ExternalLink>
         </Header>
         <Block columns={3}>
-          <video src="/homebutler/demo.mp4" preload="auto" autoPlay controls loop className="shadow-xl border-[5px] border-black rounded">
-            <source src="/homebutler/demo.mp4" type="video/mp4" />
-          </video>
+          <p>
+            After finding a really old 1st gen iPad mini (which is over {converter.toWords(new Date().getFullYear() - 2012)} years old), I had the brainwave to install <ExternalLink href="https://apps.apple.com/us/app/home-assistant/id1099568401">Home Assistant</ExternalLink> on it and use it to control my home automation.
+          </p>
+
+          <p>
+            However, you couldn't just install the app; the iPad mini is running iOS 9.3.5, which is waaaaay too old to install the app.
+          </p>
           
           <p>
             Next up is to view the Home Assistant web interface, which normally works great. There are, however, long-standing issues (you can&apos;t load the page to authenticate, and they have <ExternalLink href="https://github.com/home-assistant/frontend/issues?q=is%3Aissue%209.3.5">no interest in fixing</ExternalLink>, and fair enough) because:
@@ -54,6 +59,10 @@ export default function HomeButler() {
           <p>
             Then, with a lot of tweaking and exploration of the Home Assistant states, services and weather APIs, I was able to get the app to work with nice interactions for changing the brightness of dimmable lights, trigger scripts (to turn on/off the TV with via IR with a <ExternalLink href="https://www.amazon.com.au/Broadlink-RM4-Universal-Automation-Infrared/dp/B0872PPSGM">RM4 Broadlink blaster</ExternalLink>), and get the weather for the day.
           </p>
+
+          <video src="/homebutler/demo.mp4" preload="auto" autoPlay controls loop className="shadow-xl border-[5px] border-black rounded">
+            <source src="/homebutler/demo.mp4" type="video/mp4" />
+          </video>
 
           <p>If there&apos;s interest to run it on your own, <ExternalLink href="mailto:mark@markcipolla.com">drop me a line</ExternalLink> and I&apos;ll send you the app and instructions.</p>
         </Block>
