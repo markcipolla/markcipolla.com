@@ -24,17 +24,22 @@ export default function HomeButler() {
           </p>
 
           <p>
-            However, you couldn't just install the app; the iPad mini is running iOS 9.3.5, which is waaaaay too old to install the app.
+            However, you couldn't just install the app; the iPad mini is running iOS 9.3.5, which is waaaaay too old an os version to install.
           </p>
           
           <p>
-            Next up is to view the Home Assistant web interface, which normally works great. There are, however, long-standing issues (you can&apos;t load the page to authenticate, and they have <ExternalLink href="https://github.com/home-assistant/frontend/issues?q=is%3Aissue%209.3.5">no interest in fixing</ExternalLink>, and fair enough) because:
+            Next up is to try and view the Home Assistant web interface, which normally works great. There are, however, long-standing issues (you can&apos;t load the page to authenticate, and they have <ExternalLink href="https://github.com/home-assistant/frontend/issues?q=is%3Aissue%209.3.5">no interest in fixing</ExternalLink>, and fair enough) because:
           </p>
 
           <ol>
             <li className="list-[lower-alpha] list-outside">the Safari on the old iPads is major versions out of date, and</li>
+            <li className="list-[lower-alpha] list-outside">the list of polyfills required to even get close is immense (and still didn't work apparently), and</li>
             <li className="list-[lower-alpha] list-outside">you can&apos;t install any other (non-safari based) browser that you could use, as nobody builds apps that far back.</li>
           </ol>
+
+          <p>
+            Folks online even suggested installing a <ExternalLink href="https://www.reddit.com/r/homeassistant/comments/1j7o6e7/how_did_you_access_home_assistant_onto_your_old/">dockerised container of Firefox</ExternalLink> to use as a browser, which <em>does</em> work, but is clunky and slow.
+          </p>
 
           <p>
             So, I decided to build a small, scrappy app to control my home automation. Break out <ExternalLink href="https://developer.apple.com/xcode/">Xcode</ExternalLink>, <ExternalLink href="https://claude.ai">Claude.ai</ExternalLink> and start building. You can get pretty far with just a simulator, but eventually it&apos;s time to try deploying to the device and giving it a whirl. And that&apos;s when the sadness really begins.
@@ -64,7 +69,7 @@ export default function HomeButler() {
             <source src="/homebutler/demo.mp4" type="video/mp4" />
           </video>
 
-          <p>If there&apos;s interest to run it on your own, <ExternalLink href="mailto:mark@markcipolla.com">drop me a line</ExternalLink> and I&apos;ll send you the app and instructions.</p>
+          <p>If there&apos;s interest to run it on your own, <ExternalLink href="mailto:mark@markcipolla.com">drop me a line</ExternalLink> and let me know! The <ExternalLink href="https://github.com/markcipolla/HomeButler/releases">GitHub repository</ExternalLink> is public, and has built release IPAs so you install it on your own device.</p>
         </Block>
         <Block columns={3}>
           <ol>
