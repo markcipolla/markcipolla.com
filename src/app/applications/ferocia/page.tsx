@@ -22,6 +22,6 @@ I don't see an open role that's an obvious fit right now, but I'd love to be on 
 Thanks for reading.
 `;
 
-export default function FerociaPage() {
+export default function Page() {
   return <PDFView coverLetter={coverLetter} />;
 }

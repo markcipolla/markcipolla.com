@@ -25,6 +25,6 @@ Thanks for reading.
 Mark Cipolla
 `;
 
-export default function AmberPage() {
+export default function Page() {
   return <PDFView coverLetter={coverLetter} />;
 }
