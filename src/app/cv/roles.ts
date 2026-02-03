@@ -11,9 +11,15 @@ export const roles: Role[] = [
     description: `
 Fresho is a market-leading wholesale food order management platform, designed as a Closed Marketplace for fresh food suppliers and their customers.
 
-Introduced TypeScript to the codebases, refactoring a shared set of React components, and added a gem of [View Components](https://viewcomponents.org/) to share Rails components, all being displayed in [Storybook](https://storybook.js.org/) together.
+Lead the introduction of TypeScript to the codebases, refactoring a shared set of React components, and added a Ruby on Rails gem of [View Components](https://viewcomponents.org/) to share Rails components between applications, all being displayed in [Storybook](https://storybook.js.org/) together in a unified component library.
 
-Built an infrastructure documentation app that reads a Github Organisation's repositories and builds a [React Flow](https://reactflow.dev/) diagram of the dependencies, events and APIs between them.
+Rebuilt some of the critical path pages of the platform, rewriting them from a very old version of ember.js to a modern Rails views and React applications.
+
+Built new interfaces for AI-powered email workflow tools, using [Sendgrid](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/inbound-parse) to parse emails, [AWS Kinesis](https://aws.amazon.com/kinesis/data-streams/) streams to process events between systems, and a React application to display the results and manage the workflow.
+
+Built an infrastructure documentation app that reads a Github Organisation's repositories and builds a [React Flow](https://reactflow.dev/) diagram of the dependencies, events, message streams, and APIs between them.
+
+Started mentoring other engineers, providing guidance on career possibilities, framing skills growth and goal setting in conversations towards progression.
 `,
   },
   {
@@ -27,6 +33,8 @@ Built an infrastructure documentation app that reads a Github Organisation's rep
 Carbon Plus was a team focused on growing environmental markets, to leave behind a planet more capable of sustaining healthy human life.
 
 Leading the development of the [Platform for Land and Nature Repair](https://planr.gov.au) for the [Department of Climate Change, Energy, the Environment and Water](https://www.dcceew.gov.au/), in collaboration with [Australian National University](https://www.anu.edu.au). 
+
+Provided technical leadership and guidance, added technical input to strategic direction, liaised with external contractors, and pairing and mentoring junior engineers.
 
 PLANR helps landowners and farmers:
 - understand how parts of their land can be used for carbon abatement and biodiversity projects and the prospective outcomes
@@ -78,6 +86,8 @@ Cogent was a Melbourne based consulting firm that was acquired by Block in May 2
 Worked with [Flux Federation](https://www.fluxfederation.com/) on a transformational project to build billing features to their energy retail platform for [Powershop](https://www.powershop.com.au/).
 
 Rebuilt [AgSteward](https://agsteward.com.au), now the [Platform for Land and Nature Repair](https://planr.gov.au/), from a Ruby on Rails pilot app to a .Net app hosted on Azure, to meet government requirements. Enabled landowners to apply for starting [Enhancing Remnant Vegetation](https://planr.gov.au/program-info/erv) and [Carbon + Biodiversity Pilot](https://planr.gov.au/program-info/cb) projects.
+
+Did the [Blackmill Leading Engineering Teams](https://blackmill.co/coaching-training/workshops/leading-engineering-teams) workshop to develop my technical leadership skills.
 `,
   },
   {
